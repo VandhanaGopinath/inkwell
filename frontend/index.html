@@ -13,7 +13,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit;font-size:
 input,select{font-family:inherit;font-size:inherit}
 a{color:var(--accent);text-decoration:none}
 .hidden{display:none!important}
-/* AUTH */
 .auth-overlay{position:fixed;inset:0;background:linear-gradient(135deg,#f4f0ea 0%,#ede8f5 50%,#e8f0f4 100%);display:flex;align-items:center;justify-content:center;z-index:1000;transition:opacity .4s var(--ease)}
 .auth-overlay:not(.active){opacity:0;pointer-events:none}
 .auth-card{background:var(--surface);border-radius:var(--radius-xl);padding:40px;width:420px;max-width:95vw;box-shadow:var(--shadow-xl);border:1px solid var(--border);animation:slideUp .5s var(--ease-spring)}
@@ -37,9 +36,7 @@ a{color:var(--accent);text-decoration:none}
 .btn-ghost{padding:10px;color:var(--ink-400);border-radius:var(--radius);font-size:13.5px;transition:all .2s;text-align:center;width:100%}
 .btn-ghost:hover{color:var(--ink-700);background:var(--surface-3)}
 .auth-footer{text-align:center;color:var(--ink-400);font-size:12px;margin-top:8px}
-/* APP */
 .app{height:100vh;display:flex;flex-direction:column}
-/* TOOLBAR */
 .toolbar{height:var(--toolbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 16px;gap:12px;position:relative;z-index:100;flex-shrink:0;box-shadow:var(--shadow-sm)}
 .toolbar-left{display:flex;align-items:center;gap:16px;min-width:200px}
 .toolbar-center{display:flex;align-items:center;gap:8px;flex:1;justify-content:center;overflow-x:auto}
@@ -71,9 +68,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .ib:hover{background:var(--surface-3);color:var(--ink-800)}
 .btn-sec{padding:7px 14px;background:var(--surface);color:var(--ink-700);border:1.5px solid var(--border-strong);border-radius:var(--radius);font-weight:500;font-size:13px;display:flex;align-items:center;gap:6px;transition:all .2s}
 .btn-sec:hover{background:var(--surface-3);border-color:var(--ink-300)}
-/* LAYOUT */
 .main-layout{display:flex;flex:1;overflow:hidden}
-/* SIDEBAR */
 .sidebar{flex-shrink:0;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;overflow-x:hidden}
 .ls{width:var(--sidebar-w)}
 .rs{width:var(--ai-panel-w);border-right:none;border-left:1px solid var(--border);display:flex;flex-direction:column}
@@ -99,7 +94,6 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .pi-info{flex:1;min-width:0}
 .pi-name{font-size:12.5px;color:var(--ink-700)}
 .pi-date{font-size:11px;color:var(--ink-400)}
-/* CANVAS */
 .ca{flex:1;display:flex;flex-direction:column;overflow:hidden;background:#e8e8f0;position:relative}
 .cw{flex:1;overflow:auto;display:flex;align-items:flex-start;justify-content:flex-start;padding:24px;position:relative;cursor:none}
 #mc,#cc{position:absolute;top:0;left:0}
@@ -108,7 +102,6 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .cs-bar{height:30px;background:var(--surface);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 16px;flex-shrink:0}
 .sm{font-size:12px;color:var(--ink-400)}
 .pi-ind{font-size:12px;color:var(--ink-400)}
-/* AI PANEL */
 .ai-tabs{display:flex;border-bottom:1px solid var(--border);flex-shrink:0}
 .ai-tab{flex:1;padding:12px 6px;font-size:11.5px;font-weight:500;color:var(--ink-400);border-bottom:2px solid transparent;transition:all .2s;text-align:center}
 .ai-tab.active{color:var(--ai);border-bottom-color:var(--ai)}
@@ -140,7 +133,6 @@ select.si-input:focus{border-color:var(--ai)}
 .uf{height:100%;background:linear-gradient(90deg,var(--ai) 0%,var(--accent) 100%);border-radius:2px;transition:width .5s var(--ease)}
 .bus{font-size:11.5px;color:var(--accent);font-weight:500;width:100%;text-align:center;padding:4px;border-radius:4px;transition:background .15s}
 .bus:hover{background:var(--accent-muted)}
-/* MODALS */
 .modal{position:fixed;inset:0;z-index:500;display:flex;align-items:center;justify-content:center}
 .mb{position:absolute;inset:0;background:rgba(13,13,20,.5);backdrop-filter:blur(6px)}
 .mc{position:relative;background:var(--surface);border-radius:var(--radius-xl);box-shadow:var(--shadow-xl);padding:32px;width:480px;max-width:95vw;max-height:90vh;overflow-y:auto;animation:slideUp .3s var(--ease-spring)}
@@ -155,7 +147,6 @@ select.si-input:focus{border-color:var(--ai)}
 .el strong{display:block;font-size:14px;color:var(--ink-800)}
 .el span{font-size:12px;color:var(--ink-400)}
 .en{font-size:12px;color:var(--ink-400)}
-/* UPGRADE */
 .uc{text-align:center;width:440px}
 .uh2{margin-bottom:24px}
 .ubadge{display:inline-block;padding:3px 12px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-light) 100%);color:white;font-size:11px;font-weight:700;letter-spacing:.1em;border-radius:20px;margin-bottom:12px}
@@ -171,7 +162,6 @@ select.si-input:focus{border-color:var(--ai)}
 .pf{list-style:none;text-align:left;margin-bottom:24px;display:flex;flex-direction:column;gap:8px}
 .pf li{font-size:13.5px;color:var(--ink-700);display:flex;align-items:center;gap:8px}
 .ut{font-size:12px;color:var(--ink-400);margin-top:12px}
-/* USER MENU */
 .user-menu{position:relative}
 .ua{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-light) 100%);color:white;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s}
 .ua:hover{transform:scale(1.05);box-shadow:var(--shadow-md)}
@@ -186,7 +176,6 @@ select.si-input:focus{border-color:var(--ai)}
 .di:hover{background:var(--surface-3)}
 .di.danger{color:var(--error)}
 .di.danger:hover{background:#fff0ef}
-/* TOAST */
 .tc{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;gap:8px;z-index:9999;align-items:center}
 .toast{padding:10px 18px;background:var(--ink-900);color:white;border-radius:20px;font-size:13.5px;box-shadow:var(--shadow-lg);animation:ti .3s var(--ease-spring);max-width:340px;text-align:center}
 .toast.success{background:var(--success)}
@@ -204,7 +193,6 @@ select.si-input:focus{border-color:var(--ai)}
 </head>
 <body>
 
-<!-- Auth -->
 <div id="auth-overlay" class="auth-overlay active">
   <div class="auth-card">
     <div class="auth-brand">
@@ -232,7 +220,6 @@ select.si-input:focus{border-color:var(--ai)}
   </div>
 </div>
 
-<!-- App -->
 <div id="app" class="app hidden">
   <header class="toolbar">
     <div class="toolbar-left">
@@ -310,7 +297,6 @@ select.si-input:focus{border-color:var(--ai)}
   </header>
 
   <div class="main-layout">
-    <!-- Left Sidebar -->
     <aside class="sidebar ls">
       <div class="sh"><h2>Notebooks</h2><button class="ib" id="new-nb-btn" title="New Notebook">+</button></div>
       <div id="nbl" class="nbl"></div>
@@ -319,7 +305,6 @@ select.si-input:focus{border-color:var(--ai)}
       <div id="pgl" class="pl"></div>
     </aside>
 
-    <!-- Canvas -->
     <main class="ca">
       <div class="cw" id="cw">
         <canvas id="mc"></canvas>
@@ -331,7 +316,6 @@ select.si-input:focus{border-color:var(--ai)}
       </div>
     </main>
 
-    <!-- Right AI Panel -->
     <aside class="sidebar rs" id="ai-panel">
       <div class="ai-tabs">
         <button class="ai-tab active" data-panel="convert">✦ Convert</button>
@@ -339,7 +323,6 @@ select.si-input:focus{border-color:var(--ai)}
         <button class="ai-tab" data-panel="summarize">◈ Summarize</button>
       </div>
 
-      <!-- Convert -->
       <div class="apc active" id="panel-convert">
         <div class="ps">
           <h3>Handwriting → Text</h3>
@@ -356,7 +339,6 @@ select.si-input:focus{border-color:var(--ai)}
         </div>
       </div>
 
-      <!-- Translate -->
       <div class="apc" id="panel-translate">
         <div class="ps">
           <h3>Translate Text</h3>
@@ -378,7 +360,6 @@ select.si-input:focus{border-color:var(--ai)}
         </div>
       </div>
 
-      <!-- Summarize -->
       <div class="apc" id="panel-summarize">
         <div class="ps">
           <h3>AI Summarize</h3>
@@ -396,7 +377,6 @@ select.si-input:focus{border-color:var(--ai)}
         </div>
       </div>
 
-      <!-- Usage Meter -->
       <div class="um" id="usage-meter">
         <div class="uh"><span>AI Credits</span><span id="uc">0 / 10 used</span></div>
         <div class="ub"><div class="uf" id="uf" style="width:0%"></div></div>
@@ -405,7 +385,6 @@ select.si-input:focus{border-color:var(--ai)}
     </aside>
   </div>
 
-  <!-- Export Modal -->
   <div id="export-modal" class="modal hidden">
     <div class="mb" id="exp-bd"></div>
     <div class="mc">
@@ -419,7 +398,6 @@ select.si-input:focus{border-color:var(--ai)}
     </div>
   </div>
 
-  <!-- Upgrade Modal -->
   <div id="upgrade-modal" class="modal hidden">
     <div class="mb" id="upg-bd"></div>
     <div class="mc uc">
@@ -456,7 +434,6 @@ select.si-input:focus{border-color:var(--ai)}
 // INKWELL — Complete Single-File Application
 // ═══════════════════════════════════════════════════════════
 
-// ── State ─────────────────────────────────────────────────
 const state = {
   user: null,
   tool: 'pen',
@@ -482,7 +459,9 @@ const state = {
 
 const CANVAS_W = 1200, CANVAS_H = 1600;
 
-// ── Canvas Setup ──────────────────────────────────────────
+// ── IMPORTANT: Replace with your actual Render URL ──
+const API_BASE = 'https://your-render-url.onrender.com/api';
+
 const mc = document.getElementById('mc');
 const ctx = mc.getContext('2d');
 const cc = document.getElementById('cc');
@@ -512,7 +491,6 @@ function positionCanvas() {
 
 new ResizeObserver(positionCanvas).observe(cw);
 
-// ── Drawing Events ────────────────────────────────────────
 mc.addEventListener('mousedown', e => { if (!e.altKey) beginStroke(e.clientX, e.clientY, 0.5); });
 mc.addEventListener('mousemove', e => { if (state.isDrawing) continueStroke(e.clientX, e.clientY, 0.5); });
 mc.addEventListener('mouseup', endStroke);
@@ -607,7 +585,6 @@ function drawCursor(e) {
   cctx.restore();
 }
 
-// ── Undo/Redo ──────────────────────────────────────────────
 function undo() {
   if (!state.undoStack.length) return showToast('Nothing to undo');
   const a = state.undoStack.pop(); state.redoStack.push(a);
@@ -663,7 +640,6 @@ function replayStroke(s) {
   ctx.restore();
 }
 
-// ── Zoom ──────────────────────────────────────────────────
 cw.addEventListener('wheel', e => {
   e.preventDefault();
   if (e.ctrlKey || e.metaKey) {
@@ -681,7 +657,6 @@ function updateZoomLabel() {
   document.getElementById('zoom-label').textContent = Math.round(state.scale*100)+'%';
 }
 
-// ── Tool Bindings ─────────────────────────────────────────
 document.querySelectorAll('.tb[data-tool]').forEach(b => b.addEventListener('click', () => {
   state.tool = b.dataset.tool;
   document.querySelectorAll('.tb[data-tool]').forEach(x => x.classList.remove('active'));
@@ -700,11 +675,9 @@ document.getElementById('custom-color').addEventListener('input', e => {
 });
 
 document.getElementById('brush-size').addEventListener('input', e => { state.size = parseFloat(e.target.value); });
-
 document.getElementById('undo-btn').addEventListener('click', undo);
 document.getElementById('redo-btn').addEventListener('click', redo);
 document.getElementById('clear-btn').addEventListener('click', () => { if (confirm('Clear this page?')) clearCanvas(); });
-
 document.getElementById('zi-btn').addEventListener('click', () => { state.scale = Math.min(4, state.scale*1.2); positionCanvas(); updateZoomLabel(); });
 document.getElementById('zo-btn').addEventListener('click', () => { state.scale = Math.max(0.2, state.scale/1.2); positionCanvas(); updateZoomLabel(); });
 document.getElementById('zr-btn').addEventListener('click', () => { state.scale=1; state.offsetX=24; state.offsetY=24; positionCanvas(); updateZoomLabel(); });
@@ -720,7 +693,6 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ── Notebook System ───────────────────────────────────────
 function initNotebooks() {
   const saved = JSON.parse(localStorage.getItem('inkwell_notebooks')||'[]');
   state.notebooks = saved.length ? saved : [createNotebook('My First Notebook')];
@@ -845,20 +817,16 @@ function updateUsageMeter() {
   document.getElementById('uf').style.width = `${Math.min(100,(used/limit)*100)}%`;
 }
 
-async function callClaude(system, user) {
-  const r = await fetch('https://api.anthropic.com/v1/messages', {
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({
-      model:'claude-sonnet-4-20250514',
-      max_tokens:1000,
-      system,
-      messages:[{role:'user',content:user}]
-    })
+// ── All AI calls go through your Render backend ───────────
+async function callClaude(endpoint, body) {
+  const r = await fetch(`${API_BASE}/ai/${endpoint}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
   });
-  if (!r.ok) { const e=await r.json().catch(()=>{}); throw new Error(e?.error?.message||'AI error'); }
+  if (!r.ok) { const e = await r.json().catch(()=>{}); throw new Error(e?.error||'AI error'); }
   const d = await r.json();
-  return d.content?.find(b=>b.type==='text')?.text||'';
+  return d.text || '';
 }
 
 async function recognizeHandwriting() {
@@ -867,20 +835,7 @@ async function recognizeHandwriting() {
   showAILoad('Recognizing handwriting...');
   try {
     const b64 = mc.toDataURL('image/png').split(',')[1];
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({
-        model:'claude-sonnet-4-20250514', max_tokens:1000,
-        messages:[{role:'user',content:[
-          {type:'image',source:{type:'base64',media_type:'image/png',data:b64}},
-          {type:'text',text:'Transcribe all handwritten text visible in this image. Return only the text, no explanations. If blank, return empty.'}
-        ]}]
-      })
-    });
-    if (!r.ok) throw new Error('Recognition failed');
-    const d = await r.json();
-    const text = d.content?.find(b=>b.type==='text')?.text?.trim()||'';
+    const text = await callClaude('recognize', { imageData: b64 });
     if (!text) return showToast('Could not recognize text — try writing more clearly','warning');
     useAICredit();
     document.getElementById('rt').textContent = text;
@@ -900,7 +855,7 @@ async function translateText() {
   const lang = sel.options[sel.selectedIndex].text;
   showAILoad('Translating...');
   try {
-    const result = await callClaude('You are a professional translator. Return only the translated text.', `Translate to ${lang}:\n\n${src}`);
+    const result = await callClaude('translate', { text: src, language: lang });
     useAICredit();
     document.getElementById('tr-result').textContent = result;
     document.getElementById('trs').style.display = '';
@@ -913,15 +868,10 @@ async function summarizeText() {
   if (!canUseAI()) return showUpgradeModal();
   const src = document.getElementById('rt').textContent?.trim();
   if (!src) { showToast('Convert handwriting to text first','warning'); return switchPanel('convert'); }
-  const prompts = {
-    summary:'Write a clear, concise summary of these notes. Return only the summary.',
-    bullets:'Extract key points as a bulleted list using • for each bullet. Return only bullets.',
-    insights:'Extract the most important insights and action items as a numbered list.'
-  };
-  const titles = {summary:'Summary',bullets:'Key Points',insights:'Insights'};
   showAILoad('Generating '+state.summaryMode+'...');
   try {
-    const result = await callClaude('You are an expert note analyzer. Be concise and insightful.', `${prompts[state.summaryMode]}\n\nNotes:\n${src}`);
+    const result = await callClaude('summarize', { text: src, mode: state.summaryMode });
+    const titles = {summary:'Summary',bullets:'Key Points',insights:'Insights'};
     useAICredit();
     document.getElementById('sum-title').textContent = titles[state.summaryMode];
     document.getElementById('sum-result').textContent = result;
@@ -948,20 +898,17 @@ document.getElementById('copy-sum-btn').addEventListener('click', () => {
   navigator.clipboard.writeText(document.getElementById('sum-result').textContent||'').then(()=>showToast('Copied!','success'));
 });
 
-// AI Panel tabs
 document.querySelectorAll('.ai-tab').forEach(t => t.addEventListener('click', () => switchPanel(t.dataset.panel)));
 function switchPanel(p) {
   document.querySelectorAll('.ai-tab').forEach(t=>t.classList.toggle('active',t.dataset.panel===p));
   document.querySelectorAll('.apc').forEach(c=>c.classList.toggle('active',c.id===`panel-${p}`));
 }
 
-// Mode buttons
 document.querySelectorAll('.mbb').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('.mbb').forEach(x=>x.classList.remove('active'));
   b.classList.add('active'); state.summaryMode = b.dataset.mode;
 }));
 
-// ── Export ────────────────────────────────────────────────
 document.getElementById('export-btn').addEventListener('click', () => document.getElementById('export-modal').classList.remove('hidden'));
 document.getElementById('exp-close').addEventListener('click', () => document.getElementById('export-modal').classList.add('hidden'));
 document.getElementById('exp-bd').addEventListener('click', () => document.getElementById('export-modal').classList.add('hidden'));
@@ -988,7 +935,6 @@ document.querySelectorAll('.eo').forEach(b => b.addEventListener('click', () => 
   }
 }));
 
-// ── Auth ──────────────────────────────────────────────────
 function initAuth() {
   const saved = localStorage.getItem('inkwell_user');
   if (saved) {
@@ -1057,11 +1003,9 @@ document.getElementById('logout-btn').addEventListener('click', () => {
   document.getElementById('ud').classList.add('hidden'); showAuth();
 });
 
-// User menu toggle
 document.getElementById('ua').addEventListener('click', e => { e.stopPropagation(); document.getElementById('ud').classList.toggle('hidden'); });
 document.addEventListener('click', () => document.getElementById('ud').classList.add('hidden'));
 
-// ── Upgrade Modal ─────────────────────────────────────────
 function showUpgradeModal() { document.getElementById('upgrade-modal').classList.remove('hidden'); }
 function hideUpgradeModal() { document.getElementById('upgrade-modal').classList.add('hidden'); }
 
@@ -1077,20 +1021,17 @@ document.querySelectorAll('.pp').forEach(b => b.addEventListener('click', () => 
 }));
 
 document.getElementById('subscribe-btn').addEventListener('click', () => {
-  showToast('Add your Stripe key to enable payments! (see backend/.env.example)','warning');
+  showToast('Add your Stripe key to enable payments!','warning');
 });
 
-// ── Toast ─────────────────────────────────────────────────
 function showToast(msg, type='') {
   const t=document.createElement('div'); t.className=`toast${type?' '+type:''}`;
   t.textContent=msg; document.getElementById('tc').appendChild(t);
   setTimeout(()=>{ t.style.animation='to2 .3s ease forwards'; setTimeout(()=>t.remove(),300); }, 3000);
 }
 
-// ── Helpers ───────────────────────────────────────────────
 function esc(s) { const d=document.createElement('div'); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
 
-// ── BOOT ──────────────────────────────────────────────────
 initAuth();
 </script>
 </body>
