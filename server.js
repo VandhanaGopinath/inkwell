@@ -17,8 +17,8 @@ const PORT = process.env.PORT || 3001;
 // â”€â”€ Middleware â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-  credentials: true,
+  origin: '*',
+  credentials: false,
 }));
 app.use(express.json({ limit: '50mb' })); // Large for canvas images
 app.use(morgan('dev'));
