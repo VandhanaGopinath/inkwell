@@ -3,7 +3,7 @@
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
 const VISION_MODEL = 'meta-llama/llama-4-scout-17b-16e-instruct';
-const TEXT_MODEL = 'llama3-8b-8192';
+const TEXT_MODEL = 'llama-3.3-70b-versatile';
 
 async function callGroq(messages, useVision = false) {
   const fetch = (await import('node-fetch')).default;
