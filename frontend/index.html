@@ -377,7 +377,7 @@ select.si-input:focus{border-color:var(--ai)}
         </div>
       </div>
 
-      <div class="um" id="usage-meter">
+      <div class="um" id="usage-meter" style="display:none">
         <div class="uh"><span>AI Credits</span><span id="uc">0 / 10 used</span></div>
         <div class="ub"><div class="uf" id="uf" style="width:0%"></div></div>
         <button class="bus" id="upgrade-small-btn">Upgrade for unlimited ↗</button>
@@ -449,7 +449,7 @@ const state = {
   undoStack: [],
   redoStack: [],
   aiCreditsUsed: 0,
-  aiCreditsLimit: 10,
+  aiCreditsLimit: 999999,
   notebooks: [],
   currentNotebook: null,
   currentPage: null,
@@ -801,7 +801,7 @@ function setStatus(msg) { document.getElementById('status-msg').textContent = ms
 // ── AI Features ───────────────────────────────────────────
 function canUseAI() {
   if (state.user?.plan==='pro') return true;
-  return state.aiCreditsUsed < state.aiCreditsLimit;
+  return true;
 }
 
 function useAICredit() {
