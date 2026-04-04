@@ -391,10 +391,10 @@ select.si-input:focus{border-color:var(--ai)}
       <div class="mh"><h2>Export Notes</h2><button class="mcl" id="exp-close">×</button></div>
       <div class="eos">
         <button class="eo" data-format="png"><div class="ei">🖼</div><div class="el"><strong>PNG Image</strong><span>High-quality image of your canvas</span></div></button>
-        <button class="eo" data-format="pdf"><div class="ei">📄</div><div class="el"><strong>PDF Document</strong><span>Portable document — Pro only</span></div></button>
+        <button class="eo" data-format="pdf"><div class="ei">📄</div><div class="el"><strong>PDF Document</strong><span>Portable document</span></div></button>
         <button class="eo" data-format="txt"><div class="ei">📝</div><div class="el"><strong>Text File</strong><span>Export recognized text</span></div></button>
       </div>
-      <p class="en">PDF export requires <a href="#" id="exp-upgrade">Pro plan ↗</a></p>
+      
     </div>
   </div>
 
@@ -912,11 +912,11 @@ document.querySelectorAll('.mbb').forEach(b => b.addEventListener('click', () =>
 document.getElementById('export-btn').addEventListener('click', () => document.getElementById('export-modal').classList.remove('hidden'));
 document.getElementById('exp-close').addEventListener('click', () => document.getElementById('export-modal').classList.add('hidden'));
 document.getElementById('exp-bd').addEventListener('click', () => document.getElementById('export-modal').classList.add('hidden'));
-document.getElementById('exp-upgrade').addEventListener('click', e => { e.preventDefault(); document.getElementById('export-modal').classList.add('hidden'); showUpgradeModal(); });
+
 
 document.querySelectorAll('.eo').forEach(b => b.addEventListener('click', () => {
   const fmt = b.dataset.format;
-  if (fmt==='pdf' && state.user?.plan!=='pro') { document.getElementById('export-modal').classList.add('hidden'); showUpgradeModal(); return; }
+  // PDF available for all
   document.getElementById('export-modal').classList.add('hidden');
   if (fmt==='png') {
     const link = document.createElement('a'); link.download=`inkwell-${Date.now()}.png`; link.href=mc.toDataURL('image/png'); link.click();
